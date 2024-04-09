@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avaliacaoPAM.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center">
+            <Label
+                Text="ROLADOR DE DADOS"
+                FontSize="60"
+                />
+            <Label
+                x:Name="ValorSorteado"
+                Text=""
+                HorizontalOptions="Center"
+                FontSize="100"
+                />
+            <Picker x:Name="SidesPicker" Title="Selecione o tamanho do dado">
+                <Picker.Items>
+                    <x:String>4</x:String>
+                    <x:String>6</x:String>
+                    <x:String>10</x:String>
+                    <x:String>20</x:String>
+                    <x:String>100</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button
+                x:Name="RolarDado"
+                Text="ROLAR DADO"
+                Clicked="rolarDados"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
